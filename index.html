@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h2 class="title">ExChange It!</h2>
+
+      <div class="card">
+        <div class="currency-box">
+          <p>Base Currency</p>
+          <div class="custom-dropdown" id="fromDropdown">
+            <div class="selected" id="fromSelected">Select base currency</div>
+            <div class="dropdown-list" id="fromCurrencyList"></div>
+          </div>
+          <input type="number" id="amount" placeholder="Enter amount" />
+          <p id="fromRate" class="rate-info"></p>
+          <h3 id="fromAmountDisplay">0</h3>
+        </div>
+
+        <button id="swapButton">⇅</button>
+
+        <div class="currency-box">
+          <p>Foreign Currency</p>
+          <div class="custom-dropdown" id="toDropdown">
+            <div class="selected" id="toSelected">Select target currency</div>
+            <div class="dropdown-list" id="toCurrencyList"></div>
+          </div>
+          <p id="toRate" class="rate-info"></p>
+          <h3 id="convertedAmountDisplay">0</h3>
+        </div>
+      </div>
+
+      <p class="updated-time" id="updatedTime">Last updated on: --</p>
+      <button id="convertButton" class="calculate-btn">CALCULATE</button>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
