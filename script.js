@@ -110,8 +110,6 @@ function populateDropdown(type, currencies) {
       } else {
         selectedToCurrency = code;
       }
-
-      if (amountInput.value) convertCurrency(); // auto-update if input exists
     });
 
     list.appendChild(item);
