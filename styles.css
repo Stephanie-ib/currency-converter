@@ -169,3 +169,72 @@ h3 {
 .dropdown-item:hover {
   background-color: #f0f0f0;
 }
+
+@media (max-width: 768px) {
+  .app {
+    width: 60%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .currency-box {
+    padding: 0.8rem;
+  }
+
+  #swapButton {
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1rem;
+  }
+
+  .calculate-btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .rate-info {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .selected {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .dropdown-item {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .calculate-btn {
+    font-size: 0.95rem;
+  }
+
+  #swapButton {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+  }
+}
